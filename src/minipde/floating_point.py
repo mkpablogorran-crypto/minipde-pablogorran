@@ -39,7 +39,7 @@ def stable_sqrt_increment(x: float) -> float:
     float
         Numerically stable evaluation.
     """
-    # TODO: completar durante la primera sesión síncrona.
-    raise NotImplementedError(
-        "Implement the rationalized expression."
-    )
+    
+    print()
+    
+    return x / (math.sqrt( 1.0 + x ) + 1.0)
