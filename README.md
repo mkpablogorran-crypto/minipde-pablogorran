@@ -37,3 +37,15 @@ en derivadas parciales, aplicando:
 ```powershell
 python -m venv .venv
 .venv\Scripts\Activate.ps1
+
+
+## v0.2 · Operadores de diferencias finitas
+
+- `minipde.mesh.uniform_grid(a, b, n)`: malla 1D equiespaciada con n nodos en [a, b].
+- `minipde.operators.first_derivative(x, u)`: u' de orden 2 (centrada en el interior, adelantada/atrasada en los extremos).
+- `minipde.operators.second_derivative(x, u)`: u'' de orden 2 (mismo esquema).
+- `minipde.verification.observed_order(h, error)`: orden de convergencia observado entre mallas.
+
+Estudio de convergencia (u = sin x en [0, 2π]):
+
+    python examples/derivative_convergence.py

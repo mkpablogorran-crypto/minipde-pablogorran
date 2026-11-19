@@ -71,7 +71,7 @@ def main() -> None:
                 f"    residual: {value: .5e}"
             )
 
-        print(f"product: {roots[0] * roots.17e}")
+        print(f"product: {roots[0] * roots[1]:.17e}")
 
 
 if __name__ == "__main__":
