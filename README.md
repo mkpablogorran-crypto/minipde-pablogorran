@@ -50,3 +50,6 @@ Operadores de diferencias finitas de segundo orden. Ejecute `python examples/der
 
 ### v0.3
 Poisson 1D con Dirichlet y solución manufacturada. Ejecute `python examples/poisson_1d_dirichlet.py`.
+
+### v0.4
+Interfaz común `solve_linear_system`
